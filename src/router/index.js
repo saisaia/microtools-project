@@ -19,6 +19,11 @@ const router = createRouter({
       name: "to-do",
       component: () => import("@/components/ToDo.vue"),
     },
+    {
+      path: "/age-calculator",
+      name: "age-calculator",
+      component: () => import("@/components/AgeCalculator.vue"),
+    },
   ],
 });
 

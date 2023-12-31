@@ -60,6 +60,23 @@ const setCurrentPath = (path) => {
               </div>
             </div>
           </RouterLink>
+          <RouterLink
+            to="/age-calculator"
+            class="text-decoration-none"
+            @click="setCurrentPath('/age-calculator')"
+          >
+            <div class="card mt-3">
+              <div
+                class="card-body"
+                :class="
+                  currentPath === '/age-calculator' && 'bg-dark text-white'
+                "
+              >
+                <h5 class="card-title">Age Calculator</h5>
+                <p class="card-text">An age calculator module.</p>
+              </div>
+            </div>
+          </RouterLink>
         </nav>
       </div>
 
