@@ -28,6 +28,23 @@ const setCurrentPath = (path) => {
               </div>
             </div>
           </RouterLink>
+          <RouterLink
+            to="/miles-to-kilometers"
+            class="text-decoration-none"
+            @click="setCurrentPath('/miles-to-kilometers')"
+          >
+            <div class="card mt-3">
+              <div
+                class="card-body"
+                :class="
+                  currentPath === '/miles-to-kilometers' && 'bg-dark text-white'
+                "
+              >
+                <h5 class="card-title">Miles to Kilometers Converter</h5>
+                <p class="card-text">A distance converter module.</p>
+              </div>
+            </div>
+          </RouterLink>
         </nav>
       </div>
 

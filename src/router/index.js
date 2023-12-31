@@ -9,6 +9,11 @@ const router = createRouter({
       name: "home",
       component: FlexboxVue,
     },
+    {
+      path: "/miles-to-kilometers",
+      name: "miles-to-kilometers",
+      component: () => import("@/components/MilesToKilometers.vue"),
+    },
   ],
 });
 
