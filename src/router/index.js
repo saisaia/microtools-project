@@ -14,6 +14,11 @@ const router = createRouter({
       name: "miles-to-kilometers",
       component: () => import("@/components/MilesToKilometers.vue"),
     },
+    {
+      path: "/to-do",
+      name: "to-do",
+      component: () => import("@/components/ToDo.vue"),
+    },
   ],
 });
 

@@ -29,6 +29,21 @@ const setCurrentPath = (path) => {
             </div>
           </RouterLink>
           <RouterLink
+            to="/to-do"
+            class="text-decoration-none"
+            @click="setCurrentPath('/to-do')"
+          >
+            <div class="card mt-3">
+              <div
+                class="card-body"
+                :class="currentPath === '/to-do' && 'bg-dark text-white'"
+              >
+                <h5 class="card-title">To Do List</h5>
+                <p class="card-text">A to do list module.</p>
+              </div>
+            </div>
+          </RouterLink>
+          <RouterLink
             to="/miles-to-kilometers"
             class="text-decoration-none"
             @click="setCurrentPath('/miles-to-kilometers')"
